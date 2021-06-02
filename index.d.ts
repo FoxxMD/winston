@@ -131,7 +131,7 @@ declare namespace winston {
 
     configure(options: LoggerOptions): void;
 
-    child(options: Object): Logger;
+    child(options: Object, customzier?: (objValue: any, srcValue: any, key: any, object:any, source:any, stack:any) => any): Logger;
 
     isLevelEnabled(level: string): boolean;
     isErrorEnabled(): boolean;
